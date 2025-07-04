@@ -1,5 +1,5 @@
 {
-  "name": "Documentatry Researcher App",
+  "name": "Documentary Researcher App",
   "build": {
     "dockerfile": "Dockerfile"
   },
@@ -35,6 +35,6 @@
   // and make them available inside the container.
   "remoteEnv": {
     "GOOGLE_CLOUD_PROJECT": "${localEnv:GOOGLE_CLOUD_PROJECT}",
-    "GEMINI_API_KEY": "${localEnv:GEMINI_API_KEY}"
+    "GOOGLE_API_KEY": "${localEnv:GOOGLE_API_KEY}"
   }
 }

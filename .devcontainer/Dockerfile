@@ -24,7 +24,8 @@ RUN curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | gpg --dearmor -
     && apt-get update && apt-get install -y google-cloud-sdk
 
 # 4. Install 'uv' for Python dependency management.
-RUN pip install --upgrade pip && pip install uv pre-commit
+RUN pip install --upgrade pip
+RUN pip install uv==0.6.12
 
 # Switch back to the non-root 'vscode' user for security.
 USER vscode
